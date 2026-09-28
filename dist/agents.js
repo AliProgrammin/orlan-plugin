@@ -326,7 +326,7 @@ export async function opencodePlugin() {
     const source = await readFile(path.join(packageRoot(), "opencode", "orlan.js"), "utf8");
     const line = 'const ORLAN = ["orlan"];';
     if (!source.startsWith(OPENCODE_PLUGIN_MARK) || !source.includes(line)) {
-        throw new OrlanError("The OpenCode plugin of this orlan package is damaged. Install @orlan/cli again.");
+        throw new OrlanError("The OpenCode plugin of this orlan package is damaged. Install @orlan-maker/cli again.");
     }
     return source.replace(line, `const ORLAN = ${JSON.stringify([process.execPath, cliMain()])};`);
 }

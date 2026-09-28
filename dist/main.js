@@ -15,7 +15,7 @@ function overview() {
         "orlan - connect an agent to Orlan, and work with its topics, files and comments.",
         "",
         "Set up:",
-        "  npm i -g @orlan/cli",
+        "  npm i -g @orlan-maker/cli",
         "  orlan auth login",
         "  orlan skills add --agent <id>",
         "  orlan mcp connect --agent <id>",

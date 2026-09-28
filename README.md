@@ -1,4 +1,4 @@
-# @orlan/cli
+# @orlan-maker/cli
 
 The `orlan` command connects an AI agent to [Orlan](https://orlan.app), the review board for decks,
 PDFs, images and HTML. The agent then reads the comments on a file, posts a new version, replies and
@@ -12,7 +12,7 @@ In Orlan, open the organisation menu, choose **Connect an agent**, and copy the 
 The prompt runs these four commands:
 
 ```
-npm i -g @orlan/cli
+npm i -g @orlan-maker/cli
 orlan auth login
 orlan skills add --agent claude-code
 orlan mcp connect --agent claude-code

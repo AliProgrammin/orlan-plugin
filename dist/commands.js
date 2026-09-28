@@ -929,7 +929,8 @@ export const commands = {
                 const places = [
                     ...files.flatMap((file) => file.threads.map((thread) => ({
                         thread,
-                        place: `${quote(file.name)} ${thread.at}${thread.region ? `, region ${thread.region.join(",")}` : ""}`,
+                        place: `${quote(file.name)} ${thread.at}${thread.region ? `, region ${thread.region.join(",")}` : ""}` +
+                            (thread.element ? `, element ${quote(thread.element)}` : ""),
                     }))),
                     ...board.map((thread) => ({ thread, place: "on the board" })),
                 ];

@@ -1,5 +1,5 @@
 {
-  "name": "@orlan/cli",
+  "name": "@orlan-maker/cli",
   "version": "0.1.0",
   "description": "The orlan command: connect Claude Code, Codex, Cursor or OpenCode to Orlan, and work with its topics, files and comments from the terminal.",
   "license": "MIT",
