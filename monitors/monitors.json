@@ -1,0 +1,7 @@
+[
+  {
+    "name": "orlan-requests",
+    "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/orlan\" wait --follow --agent claude-code",
+    "description": "Orlan requests: a mention of this agent on the board"
+  }
+]

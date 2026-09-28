@@ -1,0 +1,47 @@
+{
+  "name": "@orlan/cli",
+  "version": "0.1.0",
+  "description": "The orlan command: connect Claude Code, Codex, Cursor or OpenCode to Orlan, and work with its topics, files and comments from the terminal.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "orlan": "dist/main.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "bin",
+    "hooks",
+    "monitors",
+    "opencode",
+    ".claude-plugin",
+    ".mcp.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliProgrammin/orlan-plugin.git"
+  },
+  "homepage": "https://orlan.app",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepack": "node scripts/build.mjs",
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "@orlan/api": "workspace:*",
+    "@orlan/db": "workspace:*",
+    "@orlan/files": "workspace:*",
+    "@orlan/shared": "workspace:*",
+    "@orlan/sync": "workspace:*",
+    "@orlan/worker": "workspace:*"
+  }
+}

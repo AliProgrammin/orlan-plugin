@@ -1,0 +1,14 @@
+{
+  "name": "orlan",
+  "displayName": "Orlan",
+  "version": "0.1.0",
+  "description": "Work with the Orlan review board: the orlan command, a monitor that wakes the session when a person mentions the agent, hooks that show the session's state on the board, the skills, and the MCP server.",
+  "author": {
+    "name": "Orlan",
+    "url": "https://orlan.app"
+  },
+  "homepage": "https://orlan.app",
+  "repository": "https://github.com/AliProgrammin/orlan-plugin",
+  "keywords": ["review", "board", "comments", "powerpoint", "pdf"],
+  "license": "MIT"
+}

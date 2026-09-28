@@ -1,0 +1,15 @@
+{
+  "name": "orlan",
+  "description": "The Orlan plugin for Claude Code.",
+  "owner": {
+    "name": "Orlan",
+    "url": "https://orlan.app"
+  },
+  "plugins": [
+    {
+      "name": "orlan",
+      "source": "./",
+      "description": "The Orlan review board in Claude Code: the orlan command, a monitor, hooks, skills and the MCP server."
+    }
+  ]
+}

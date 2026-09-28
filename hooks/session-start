@@ -1,0 +1,11 @@
+#!/bin/sh
+# SessionStart hook of the Orlan plugin (F044). The board shows the session as working, and the brief
+# goes into the session's context (the output of a SessionStart hook does). An error of the brief goes
+# there too, for example "No agent is connected", so the agent can tell the person what to do.
+orlan="$CLAUDE_PLUGIN_ROOT/bin/orlan"
+"$orlan" hook working --agent claude-code
+if "$orlan" brief --agent claude-code 2>&1; then
+  echo "The Orlan plugin's monitor runs orlan wait --follow for this session: each request comes as a notification. Do not run orlan wait yourself."
+  echo "Answer a request with the orlan command in few steps: orlan files pull <file id> --out <path> && cat <path>; edit the file; orlan respond <request id> --file <path> [--to <file id>] --message \"<what changed>\"."
+fi
+exit 0

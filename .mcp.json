@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "orlan": {
+      "type": "http",
+      "url": "${ORLAN_SERVER:-https://orlan.app}/mcp",
+      "headersHelper": "\"${CLAUDE_PLUGIN_ROOT}/bin/orlan\" mcp headers --agent claude-code"
+    }
+  }
+}

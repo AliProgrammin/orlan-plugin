@@ -1,0 +1,8 @@
+#!/bin/sh
+# The orlan command of the Claude Code plugin (F044). Claude Code puts this folder on the PATH of its
+# shell. It runs the CLI of this package: the sources in a checkout, else the build the npm package has.
+root=$(cd "$(dirname "$0")/.." && pwd)
+if [ -f "$root/src/main.ts" ]; then
+  exec node "$root/src/main.ts" "$@"
+fi
+exec node "$root/dist/main.js" "$@"
